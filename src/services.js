@@ -1,5 +1,4 @@
 const { delay } = require("lodash");
 
-fetchWithTimeout(delay); {
+fetchWithTimeout(delay) 
     return new Promise(resolve => setTimeout(resolve, delay));
-}
