@@ -28,8 +28,6 @@ getBooksOrMoviesPromise.then(results => {
     console.log('getBooksOrMoviesPromise', results);
 });
 
-//async functions
-
 async function getBooksAndMoviesAsync() {
     try {
         const [books, movies] = await Promise.all([asyncFetchBooks(), asyncFetchMovies()]);
@@ -56,7 +54,8 @@ getBooksAndMoviesAsync().then(results => {
     });
 
 getBooksOrMoviesAsync().then(results => {
-     console.log('movies OR books', {
-         results, 
-        });
+    console.log('movies OR books', {
+        results, 
     });
+});
+    
